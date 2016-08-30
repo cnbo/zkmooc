@@ -1,0 +1,679 @@
+@charset "utf-8";
+
+.reg-log{
+    padding-top: 80px;
+    margin-bottom: 80px;
+    min-height: 500px;
+}
+.login-box{
+    background: #FFF;
+    width: 400px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    position: relative;
+}
+#login{
+    display: block;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+#stu-reg,#tea-reg{
+    width: 600px;
+    margin-top: 0;
+}
+#stu-reg .padding-cont,#tea-reg .padding-cont{
+    padding: 0 75px 50px;
+    margin-top: 40px;
+}
+#stu-reg .input input,#tea-reg .input input{
+    width: 400px;
+}
+.login-box .title h3{
+    font-size: 18px;
+    font-weight: normal;
+}
+.login-box .items{
+    height: 30px;
+    font-size: 0;
+    background: #F2F2F2;
+    padding: 15px 0;
+    border-bottom: 1px solid #c8c8c8;
+}
+.login-box .items a{
+    font-size: 16px;
+    color: #818181;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+.login-box .items a:first-child{
+    border-right: 1px solid #c8c8c8;
+}
+.login-box .items a:hover{
+    color: #2D2D2D;
+}
+.login-box .items a.active{
+    color: #4d90fe;
+}
+.login-box .padding-cont{
+    padding: 0 30px 40px;
+}
+#stu-reg .title,#tea-reg .title{
+    padding-top: 40px;
+}
+.login-box .title .return{
+    width: 14px;
+    height: 24px;
+    display: inline-block;
+    font-size: 18px;
+    color: #818181;
+    margin-left: 20px;
+    padding: 0 24px 0 0;
+    border-right: 1px solid #c8c8c8;
+    margin-right: 15px;
+    background: url("../img/iconfont-fanhui.png") 0 -27px no-repeat;
+    background-size: 24px;
+}
+.login-box .title .return:hover{
+    background-position: 0 2px;
+}
+.login-box .input{
+    position: relative;
+    margin-top: 15px;
+    height: 56px;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+.login-box .input.focus{
+    border-bottom: 2px solid #4d90fe;
+}
+.login-box .input.error{
+    border-bottom: 2px solid #ff0000;
+}
+.login-box .input input{
+    width: 290px;
+    float: left;
+    height: 54px;
+    line-height: 54px\9;
+    font-size: 16px;
+}
+.input .error-tips{
+    position: absolute;
+    font-size: 12px;
+    color: #ff0000;
+    top: -6px;
+    white-space: nowrap;
+}
+
+.login-box .input span{
+    width: 50px;
+    height: 56px;
+    line-height: 56px;
+    color: #969696;
+    font-size: 16px;
+    float: left;
+}
+.login-box .tel-login .input span{
+    width: 70px;
+}
+.login-box .tel-login .input input{
+    width: 270px;
+}
+.login-box .tel-login .yzm-box .input input{
+    width: 130px;
+}
+.login-box .tel-login .yzm-box .get-yzm{
+    float: right;
+    width: 126px;
+    height: 36px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #DCDCDC;
+    background: #F2F2F2;
+    border-radius: 3px;
+    color: #818181;
+    margin-top: 30px;
+}
+.login-box .tel-login .yzm-box .get-yzm.nod{
+    color: #AAAAAA!important;
+    background: #F2F2F2!important;
+    border: 1px solid #DCDCDC!important;
+    cursor: default;
+}
+.login-box .tel-login .yzm-box .get-yzm:hover{
+    color: #4d90fe;
+    background: #e6e6e6;
+}
+.login-box .tel-login .yzm-box .get-yzm:active{
+    border: 1px solid #c8c8c8;
+}
+.login-box .error-tip{
+    margin-top: 13px;
+    display: none;
+}
+.login-box .error-tip span{
+    display: block;
+    height: 27px;
+    line-height: 27px;
+    background: #ff0000;
+    color: #fff;
+    padding-left: 7px;
+}
+.login-box .opt{
+    padding: 14px 0;
+    height: 24px;
+    line-height: 24px;
+}
+.login-box .opt .auto-login{
+    background: url(/Public/Home/img/check000.png) left 1px no-repeat;
+    font-size: 12px;
+    color: #818181;
+    
+}
+.login-box .opt .auto-login:hover{
+    background-position: left -34px;
+    color: #4d90fe;
+}
+.login-box .qr-sj{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(/Public/Home/img/qr-sj.png) left top no-repeat;
+    cursor: pointer;
+}
+.login-box .qr-sj:hover{
+    background-position: 0 -40px;
+}
+.impowerBox .qrcode{
+    width: 215px;
+}
+.login-box .opt .auto-login.active{
+    background-position: left -69px;
+}
+.login-box .opt .forget{
+    font-size: 12px;
+    color: #818181;
+}
+.login-box .opt .forget:hover{
+    color: #4d90fe;
+}
+.login-box .btn-btn{
+	width: 340px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background: #357AE8;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box .btn-btn:hover{
+    background: #4d90fe;
+}
+.login-box .btn-btn:active{
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 1px #4d90fe;
+}
+#stu-reg .btn-btn,#tea-reg .btn-btn{
+    margin-top: 50px;
+}
+.identity-box{
+    width: 500px;
+    height: 210px;
+    padding: 40px 50px 0;
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+.identity-box h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: #595959;
+}
+.identity-box  .choose{
+    margin-top: 55px;
+    font-size: 0;
+}
+.identity-box  .choose a{
+    display: inline-block;
+    width: 240px;
+    font-size: 20px;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background: #357AE8;
+}
+.identity-box  .choose .student{
+    margin-right: 20px;
+}
+.identity-box  .choose a:hover{
+    background: #4d90fe;
+}
+.identity-box  .choose a:active{
+    width: 238px;
+    height: 68px;
+    line-height: 68px;
+    border: 1px solid #FFF;
+    box-shadow: 0 0 0 1px #4d90fe;
+}
+
+
+
+/*登陆注册新增样式20150714*/
+.login-box .title h3:after{
+	content: "";
+	clear: both;
+}
+.login-wechatCode{
+	display: inline-block;
+	width: 20px;
+	height: 18px;
+	vertical-align: top;
+	background: url(/Public/Home/img/login-wechatCode.png) no-repeat;
+	cursor: pointer;
+	float: right;
+	margin-top: 3px;
+}
+.login-wechatCode:hover{
+	background-position: 0px -28px;
+}
+.wechatlogin-return{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: url(/Public/Home/img/qr-sj.png) 0 -80px no-repeat;
+}
+.wechatlogin-return:hover{
+    background-position: 0 bottom;
+}
+.wechatlogin-return a{
+	display: inline-block;
+	width: 30px;
+	color: #818181;
+	font-size: 14px;
+}
+.wechatlogin-return a:hover{
+	color: #2D2D2D;
+}
+.wechat-container{
+	width: 300px;
+	height: 380px;
+	margin: 0px auto;
+	background: url(/Public/Common/img/loading-grey.gif) #ffffff center 70px no-repeat;
+	background-size: 45px;
+	position: relative;
+}
+.loading-txt{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 120px;
+	text-align: center;
+	width: 228px;
+	color: #5a5a5a;
+	font-size: 14px;
+	z-index: 0;
+}
+.wechat-container img{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+#wechatLogin{
+	height: 420px;
+}
+#wechatLogin .wechat-container{
+	z-index: 1;
+}
+.use-wechat-login-txt{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #595959;
+	padding-top: 30px;
+}
+
+button,input,textarea{font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB", 宋体;}
+.reset-container{
+    padding: 100px 0;
+}
+.form-box{
+    background: #FFFFFF;
+    margin: 0px auto;
+    width: 540px;
+    height: 300px;
+    padding: 40px 30px;
+}
+.form-box .input{
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+    height: 56px;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+.form-box .input.focus{
+    border-bottom: 2px solid #4d90fe;
+}
+.form-box .input.error{
+    border-bottom: 2px solid #ff0000;
+}
+.form-box .input span{
+    height: 56px;
+    line-height: 56px;
+    color: #969696;
+    font-size: 16px;
+    float: left;
+}
+.form-box .input input{
+    width: 360px;
+    float: left;
+    height: 54px;
+    line-height: 54px\9;
+    font-size: 16px;
+}
+.form-box h5{
+    font-size: 16px;
+    color: #2d2d2d;
+    font-weight: normal;
+    padding-bottom: 35px;
+}
+
+.btn-paddingTop-27{
+    padding-top: 50px;
+}
+.go-appeal{
+    text-align: right;
+    margin-top: 60px;
+    color: #969696;
+    position: relative;
+}
+.go-appeal .app-way{
+    color: #4d90fe;
+    margin-left: 12px;
+}
+.go-appeal .appeal-box{
+    position: absolute;
+    right: -40px;
+    top:30px;
+    background: #F2F2F2;
+    width: 190px;
+    height: 90px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    text-align: center;
+    display: none;
+}
+.go-appeal .appeal-box .j1{
+    position: absolute;
+    left: 110px;
+    top: -20px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 10px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #dcdcdc transparent;
+}
+.go-appeal .appeal-box .j2{
+    position: absolute;
+    left: 111px;
+    top: -18px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 9px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #f2f2f2 transparent;
+}
+.go-appeal .appeal-box ul li{
+    height: 20px;
+    font-size: 0;
+    vertical-align: top;
+    padding: 15px 0 6px;
+}
+.go-appeal .appeal-box ul li span{
+    color: #ff0000;
+    font-size: 12px;
+    margin-right: 25px;
+    display: inline-block;
+    line-height: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.go-appeal .appeal-box ul li a{
+    color: #4d90fe;
+    border: 1px solid #4d90fe;
+    font-size: 12px;
+    padding: 0 10px;
+    border-radius: 3px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.go-appeal .appeal-box ul li a:hover{
+    background: #4d90fe;
+    color: #FFFFFF;
+}
+.go-appeal .appeal-box ul li:before{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background: #818181;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.button{
+    background: #357AE8;
+    color: #FFF;
+    display: block;
+    border-radius: 5px;
+    behavior: url(/Public/Common/PIE.htc);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    width: 450px;
+    margin: 0 auto;
+}
+.button:hover{
+    background: #4D90FE;
+}
+.button:active{
+    height: 48px;
+    box-shadow: 0px 0px 0px 1px #4D90FE;
+    border: solid 1px #FFF;
+}
+.roleof{
+    width: 138px;
+    background: #357AE8;
+    color: #FFF;
+    display: inline-block;
+    behavior: url(/Public/Common/PIE.htc);
+    padding-left: 27px;
+    padding-right: 27px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    font-size: 16px;
+}
+.roleof:hover{
+    background: #4D90FE;
+}
+.roleof:active{
+    height: 44px;
+    padding-left: 26px;
+    padding-right: 26px;
+    box-shadow: 0px 0px 0px 1px #4D90FE;
+    border: solid 1px #FFF;
+}
+.roleof.l{
+    margin-right: 10px;
+}
+.roleof.r{
+    margin-left: 10px;
+}
+#tip-span{
+    background: #ff0000;
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+}
+i.radio{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/radio.png) left top no-repeat;
+    cursor: pointer;
+}
+i.radio:hover{
+    background: url(../img/radio.png) left -23px no-repeat;
+}
+i.radio.active{
+    background: url(../img/radio.png) left bottom no-repeat;
+}
+label.dotfoget i.radio{
+    display: inline-block;
+    margin-right: 5px;
+}
+label.dotfoget{
+    vertical-align: top;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #5a5a5a;
+    cursor: pointer;
+    margin-top: 18px;
+}
+a.forgetpw{
+    margin-top: 18px;
+    font-size: 12px;
+    color: #5a5a5a;
+}
+
+/*手机安全验证弹窗*/
+.pop-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(229,229,229,0.95);
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: none;
+}
+.tel-validate{
+    width: 340px;
+    height: 230px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.45);
+    background: #FFFFFF;
+    z-index: 10;
+    padding: 30px 30px 40px;
+    display: none;
+}
+.tel-validate .title h3{
+    font-weight: normal;
+    color: #595959;
+    font-size: 16px;
+    line-height: 1;
+}
+.tel-validate .title a{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 28px;
+    top: 28px;
+    background: url(/Public/Home/img/close.png) left top no-repeat;
+    border-radius: 3px;
+}
+.tel-validate .title a:hover{
+    background-position: left bottom;
+}
+.tel-validate .title a:active{
+    background-color: #DCDCDC;
+}
+.tel-validate .yzm-box .input {
+    position: relative;
+    margin-top: 15px;
+    height: 56px;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+.tel-validate .yzm-box .input.focus{
+    border-bottom: 2px solid #4d90fe;
+}
+.tel-validate .yzm-box .input.error{
+    border-bottom: 2px solid #ff0000;
+}
+.tel-validate .yzm-box .input span {
+    width: 70px;
+    height: 56px;
+    line-height: 56px;
+    color: #969696;
+    font-size: 16px;
+    float: left;
+}
+.tel-validate .yzm-box .input input {
+    width: 130px;
+    float: left;
+    height: 54px;
+    line-height: 54px\9;
+    font-size: 16px;
+}
+.tel-validate .yzm-box .get-yzm {
+    float: right;
+    width: 126px;
+    height: 36px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #DCDCDC;
+    background: #F2F2F2;
+    border-radius: 3px;
+    color: #818181;
+    margin-top: 30px;
+}
+.tel-validate .yzm-box .get-yzm.nod{
+    color: #AAAAAA!important;
+    background: #F2F2F2!important;
+    border: 1px solid #DCDCDC!important;
+    cursor: default;
+}
+.tel-validate .yzm-box .get-yzm:hover{
+    color: #4d90fe;
+    background: #e6e6e6;
+}
+.tel-validate .yzm-box .get-yzm:active{
+    border: 1px solid #c8c8c8;
+}
+.tel-validate .words{
+    margin-top: 40px;
+}
+.tel-validate .words span{
+    color: #FF9933;
+}
+.tel-validate .button{
+    width: auto;
+    margin-top: 35px;
+}
+
